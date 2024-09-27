@@ -4,7 +4,7 @@
 
 ## Integrantes
 - Murilo Kenichiro Senaga, 10395789
-- Kenny
+- Kenny Jun Takahashi, 10396373
 - João Pedro
 - Lucas Kenzo
 - Lucas Pinheiro
