@@ -36,5 +36,3 @@ Toda a aplicação será containerizada utilizando Docker, com um Dockerfile con
 ### Apresentação dos Resultados
 Será utilizada a ferramenta Flask para criar a interface web, que exibirá os "matches" de usuários com gostos musicais semelhantes. A interface apresentará os perfis de outros usuários, indicando a proximidade dos gostos musicais e destacando os percentuais de similaridade.
 
-## Exemplo de Como os Resultados Serão Exibidos
-Usuário 1 e Usuário 2 têm 90% de similaridade musical, com artistas como Drake e The Weeknd em comum. Ambos compartilham faixas com características de áudio parecidas (alta energia e valência). A interface destacará esses dados e sugerirá uma conexão entre os usuários.
