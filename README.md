@@ -4,10 +4,10 @@
 
 ## Integrantes
 - Murilo Kenichiro Senaga, 10395789
-- Kenny
-- João Pedro
-- Lucas Kenzo
-- Lucas Pinheiro
+- Kenny Jun Takahashi, 10396373
+- João Pedro Mota Paes Rodrigues de Almeida, 10395291
+- Lucas Kenzo Kawamoto 10396359
+- Lucas Pinheiro, 10391001
 
 ## Problema a ser Resolvido
 O projeto tem como objetivo ajudar pessoas a encontrarem outras com gostos musicais semelhantes, utilizando os dados fornecidos pela Spotify API. A principal necessidade a ser atendida é facilitar a conexão entre usuários com base em seus hábitos musicais, gerando "matches" que permitam a descoberta de novas amizades ou comunidades com gostos musicais em comum.
