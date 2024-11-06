@@ -1,38 +1,30 @@
-# Projeto
-
-# Projeto Match
+# Projeto Mood
 
 ## Integrantes
 - Murilo Kenichiro Senaga, 10395789
 - Kenny Jun Takahashi, 10396373
 - João Pedro Mota Paes Rodrigues de Almeida, 10395291
-- Lucas Kenzo Kawamoto 10396359
+- Lucas Kenzo Kawamoto, 10396359
 - Lucas Pinheiro, 10391001
 
-## Problema a ser Resolvido
-O projeto tem como objetivo ajudar pessoas a encontrarem outras com gostos musicais semelhantes, utilizando os dados fornecidos pela Spotify API. A principal necessidade a ser atendida é facilitar a conexão entre usuários com base em seus hábitos musicais, gerando "matches" que permitam a descoberta de novas amizades ou comunidades com gostos musicais em comum.
+### Introdução  
+Este projeto visa criar um classificador de humor musical utilizando características de áudio das músicas de um artista, extraídas da Spotify Web API. Com o aumento do consumo de streaming, os usuários buscam novas maneiras de explorar músicas baseadas em suas emoções ou preferências de humor. Nosso objetivo é fornecer uma ferramenta que permita a classificação das músicas de um artista com base em valência (felicidade) e energia. Essa ferramenta utiliza algoritmos de aprendizado de máquina, auxiliando o usuário a identificar músicas que correspondem ao seu estado emocional. Além disso, a interface permite a visualização interativa dos resultados, proporcionando insights sobre as variações emocionais das músicas do artista.
 
-## Dados
-Os dados utilizados serão extraídos da Spotify Web API, que oferece uma vasta gama de informações sobre:
-- Playlists do usuário
-- Artistas favoritos
-- Características de áudio das faixas (tempo, valência, energia, acústica e popularidade)
-- Histórico de músicas mais tocadas
+### Referencial Teórico  
+A classificação de humor em músicas envolve a aplicação de aprendizado de máquina a dados tabulares, onde características de áudio (valência e energia) são usadas como variáveis para categorizar o humor das músicas. Diferentes algoritmos de classificação, como k-nearest neighbors, árvore de decisão, Naive Bayes, e SVM, são aplicados para analisar e prever o humor das faixas. A Spotify API fornece uma grande fonte de dados, oferecendo atributos que descrevem o humor e a energia das músicas, permitindo um bom treinamento e comparação entre diferentes classificadores.
 
-## Ferramentas e Métodos
+### Metodologia  
 
-### Coleta de Dados via Spotify API
-Utilizando a Spotify Web API, serão coletadas informações sobre playlists, faixas, artistas e características de áudio. A API permite a extração de informações no formato JSON, que será convertido em formato tabular para análise com Pandas.
+**Coleta de Dados:** A Spotify Web API foi utilizada para coletar dados de músicas de um artista específico. As características extraídas incluem valência e energia, que são usadas para a classificação do humor, além do ID e nome da música.
 
-### Pré-processamento dos Dados
-Serão utilizadas bibliotecas como Pandas e NumPy para processar e organizar os dados em colunas categóricas e numéricas, para extrair métricas relevantes dos hábitos musicais dos usuários.
+**Pré-processamento:** Os dados coletados são tratados para eliminar valores nulos e garantir a consistência das características de áudio. A valência e a energia são usadas como os principais atributos para a classificação do humor.
 
-### Similaridade de Perfis
-Será utilizada a biblioteca scikit-learn para calcular a similaridade entre perfis musicais utilizando métricas de distância, como distância Euclidiana. Essas medidas de similaridade serão usadas para comparar as características das faixas ou hábitos musicais dos diferentes usuários, sem necessidade de treinamento de modelos.
+**Classificação de Humor:** Inicialmente, um modelo baseado em regras é usado para categorizar as músicas em "Alegre", "Calmo", "Energético" e "Triste". Além disso, diversos algoritmos de aprendizado de máquina, como K-Nearest Neighbors, árvore de decisão, Naive Bayes e SVM, são aplicados para treinar classificadores usando os dados de valência e energia, permitindo comparar a precisão entre diferentes métodos.
 
-### Implementação com Docker
-Toda a aplicação será containerizada utilizando Docker, com um Dockerfile configurando o ambiente Python, incluindo as bibliotecas necessárias, como Pandas, scikit-learn, NumPy, Flask e o cliente da API do Spotify.
+**Visualização e Interface:** A aplicação foi desenvolvida com Streamlit, permitindo ao usuário inserir o nome de um artista e visualizar a distribuição de humor das músicas desse artista. Gráficos interativos são gerados para ilustrar as distribuições de humor e a relação entre valência e energia.
 
-### Apresentação dos Resultados
-Será utilizada a ferramenta Flask para criar a interface web, que exibirá os "matches" de usuários com gostos musicais semelhantes. A interface apresentará os perfis de outros usuários, indicando a proximidade dos gostos musicais e destacando os percentuais de similaridade.
+### Resultados  
+A aplicação classifica as músicas em diferentes categorias de humor com base nas características de valência e energia fornecidas pela Spotify API. Além do modelo baseado em regras, foram aplicados algoritmos de aprendizado de máquina, e os resultados de classificação foram comparados usando métricas como precisão e relatórios de classificação. As visualizações resultantes demonstram padrões de humor para cada artista pesquisado, possibilitando ao usuário explorar os dados de maneira interativa e obter insights sobre as preferências emocionais das músicas.
 
+### Conclusão  
+Este projeto demonstrou a viabilidade de uma ferramenta de classificação de humor para músicas, utilizando tanto um modelo baseado em regras quanto classificadores de aprendizado de máquina. A interface construída permite uma exploração intuitiva e personalizada das músicas de um artista específico.
