@@ -46,10 +46,10 @@ Este arquivo lista todas as dependências do projeto, incluindo:
 ### Instalação sem Docker
 
 #### 1. Clonar o Repositório
-
 Clone o repositório do projeto para sua máquina local ou faça o download dos arquivos do projeto.
-
-```bash git clone https://github.com/Grupo-IA-Mack/Projeto.git
+```bash
+git clone https://github.com/Grupo-IA-Mack/Projeto.git
+```
 
 ### 2. Navegar até o Diretório do Projeto
 ```bash
