@@ -28,7 +28,7 @@ Este arquivo lista todas as dependências do projeto, incluindo:
 - `matplotlib`: Para visualização de dados.
 - `scikit-learn`: Para implementação e avaliação dos modelos de aprendizado de máquina.
 
-## Instruções de Instalação
+## Procedimentos de instalação
 
 ### Pré-requisitos
 
