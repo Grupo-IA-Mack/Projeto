@@ -27,8 +27,6 @@ Este arquivo lista todas as dependências do projeto, incluindo:
 - `pandas`, `numpy`: Para manipulação e análise de dados.
 - `matplotlib`: Para visualização de dados.
 - `scikit-learn`: Para implementação e avaliação dos modelos de aprendizado de máquina.
-## link do vídeo: 
-https://youtu.be/9i6xHCKojpA
 
 ## Procedimentos de instalação
 
