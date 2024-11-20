@@ -7,6 +7,9 @@
 - Lucas Kenzo Kawamoto, 10396359
 - Lucas Pinheiro, 10391001
 
+## link do vídeo: 
+https://www.youtube.com/watch?v=Xd4tA1lzHIA
+
 ### Introdução  
 Este projeto visa criar um classificador de humor musical utilizando características de áudio das músicas de um artista, extraídas da Spotify Web API. Com o aumento do consumo de streaming, os usuários buscam novas maneiras de explorar músicas baseadas em suas emoções ou preferências de humor. Nosso objetivo é fornecer uma ferramenta que permita a classificação das músicas de um artista com base em valência (felicidade) e energia. Essa ferramenta utiliza algoritmos de aprendizado de máquina, auxiliando o usuário a identificar músicas que correspondem ao seu estado emocional. Além disso, a interface permite a visualização interativa dos resultados, proporcionando insights sobre as variações emocionais das músicas do artista.
 
